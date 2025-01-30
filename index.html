@@ -1,1232 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Miriam y Joseph</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miriam y Joseph</title>
+    <!-- Enlace al CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="animsition">
-
-	<!-- Header -->
-	<header>
-		<!-- Header desktop -->
-		<div class="wrap-menu-header gradient1 trans-0-4">
-			<div class="container h-full">
-				<div class="wrap_header trans-0-3">
-					<!-- Logo -->
-					<div class="logo">
-						<a href="index.html">
-							<img src="" loading="lazy" data-logofixed="images/logo.png">
-						</a>
-					</div>
-
-					<!-- Social -->
-					<div class="social flex-w flex-l-m p-r-20">
-						<!-- <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a> -->
-
-						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<!-- Sidebar -->
-	<aside class="sidebar trans-0-4">
-		<!-- Button Hide sidebar -->
-		<button class="btn-hide-sidebar ti-close color0-hov trans-0-4"></button>
-
-		<!-- - -->
-		<ul class="menu-sidebar p-t-95 p-b-70">
-			<li class="t-center m-b-13">
-				<a href="index.html" class="txt19">Home</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="menu.html" class="txt19">Nuestra historia</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="gallery.html" class="txt19">Gallery</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="about.html" class="txt19">About</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="blog.html" class="txt19">Blog</a>
-			</li>
-
-			<li class="t-center m-b-33">
-				<a href="contact.html" class="txt19">Contact</a>
-			</li>
-
-		</ul>
-
-		<!-- - -->
-		<div class="gallery-sidebar t-center p-l-60 p-r-60 p-b-40">
-			<!-- - -->
-			<h4 class="txt20 m-b-33">
-				Gallery
-			</h4>
-
-			<!-- Gallery -->
-			<div class="wrap-gallery-sidebar flex-w">
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-01.jpg" loading="lazy" alt="GALLERY">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-02.jpg" loading="lazy" alt="GALLERY">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-03.jpg" loading="lazy" alt="GALLERY">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-05.jpg" loading="lazy" alt="GALLERY">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-06.jpg" loading="lazy" alt="GALLERY">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-07.jpg" loading="lazy" alt="GALLERY">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-09.jpg" loading="lazy" alt="GALLERY">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-10.jpg" loading="lazy" alt="GALLERY">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-11.jpg" loading="lazy" alt="GALLERY">
-				</a>
-			</div>
-		</div>
-	</aside>
-
-	<!-- Slide1 -->
-	<section class="section-slide">
-		<div class="wrap-slick1">
-			<div class="slick1">
-				<div class="item-slick1 item1-slick1" style="background-image: url(../images/icons/pattern2.png);">
-					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-						<img src="images/logo.png" loading="lazy" alt="logo" class="logomyj">
-						<p class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
-							¡Nos casamos!
-						</p>
-						<p class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
-							15 Marzo 2025
-						</p>
-						<!-- autoplay -->
-						<audio controls loop>
-							<source src="music/dragonball.mp3" type="audio/mpeg">
-							Tu navegador no soporta la reproducción de audio.
-						</audio>						  
-
-						<div class="wrap-btn-slide1 animated visible-false" data-appear="zoomIn">
-							<!-- Button1 -->
-							<a href="#us" class="btn1 flex-c-m size1 txt3 trans-0-4" style="margin-top: 30%;">
-								Ver más
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Nuestra historia -->
-	<section id="us" class="section-welcome bg1-pattern p-t-120 p-b-105">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 p-t-45 p-b-30">
-					<div class="wrap-text-welcome t-center">
-						<span class="tit2 t-center">
-							Nuestra historia
-						</span>
-
-						<h3 class="tit3 t-center m-b-35 m-t-5">
-							Primer amor
-						</h3>
-
-						<p class="t-center m-b-22 size3 m-l-r-auto">
-							Nuestra historia comenzó hace muchos años, siendo niños. La vida nos llevó por caminos distintos, pero el destino nos regaló un reencuentro. Hoy, con el corazón lleno de amor, queremos celebrar con ustedes el inicio de esta nueva aventura juntos: nuestro matrimonio.
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 p-b-30">
-					<div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-						<img src="images/our-story.JPG" loading="lazy" alt="IMG-OUR">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Lugar y hora -->
-	<section class="section-intro">
-		<div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url(images/place.png);">
-			<!-- <span class="tit2 p-l-15 p-r-15">
-				La cita es:
-			</span> -->
-
-			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
-				Lugar y Hora
-			</h3>
-		</div>
-
-		<div class="content-intro bg-white p-t-77 p-b-133">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 p-t-30">
-						<!-- Block1 -->
-						<div class="blo1">
-							<span class="tit2 p-l-15 p-r-15">
-								Ceremonia religiosa
-							</span>
-
-							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<img src="images/iglesia.jpg" alt="IMG-INTRO">
-							</div>
-
-							<div class="wrap-text-blo1 p-t-35">
-								<a href="https://www.google.com/maps/place/Parroquia+de+Santa+María+de+la+Visitación+de+Tlapala/@19.7166004,-99.1341442,17z/data=!3m1!4b1!4m6!3m5!1s0x85d18b32ab95d29f:0x3b713e3765103108!8m2!3d19.7166004!4d-99.1341442!16s%2Fg%2F11bbx10hlp?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Parroquia de Santa María de la Visitación de Tlapala
-									<br><br>02:00 pm.
-								</h4></a>
-
-								<p class="m-b-20" style="line-height: 1.4;">
-									Calle Miguel Hidalgo 1, Visitación, 54890 Melchor Ocampo, Méx.
-								</p>
-
-								<a href="https://www.google.com/maps/place/Parroquia+de+Santa+María+de+la+Visitación+de+Tlapala/@19.7166004,-99.1341442,17z/data=!3m1!4b1!4m6!3m5!1s0x85d18b32ab95d29f:0x3b713e3765103108!8m2!3d19.7166004!4d-99.1341442!16s%2Fg%2F11bbx10hlp?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" class="txt4" style="font-size: 16px;" target="_blank">
-									Ver en Google Maps
-									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6 p-t-30">
-						<!-- Block2 -->
-						<div class="blo1">
-							<span class="tit2 p-l-15 p-r-15">
-								Recepción
-							</span>
-							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<img src="images/Finca.jpg" loading="lazy" alt="IMG-INTRO">
-							</div>
-
-							<div class="wrap-text-blo1 p-t-35">
-								<a href="https://www.google.com/maps/place/Finca+%22Don+Pedro%22/@19.7139006,-99.1430185,17z/data=!3m1!4b1!4m16!1m9!3m8!1s0x85d1f4d49c9b37a1:0x60a31b1ce783208c!2sFinca+%22Don+Pedro%22!8m2!3d19.7138956!4d-99.1404436!9m1!1b1!16s%2Fg%2F11g6rmtk14!3m5!1s0x85d1f4d49c9b37a1:0x60a31b1ce783208c!8m2!3d19.7138956!4d-99.1404436!16s%2Fg%2F11g6rmtk14?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Finca "Don Pedro"
-									<br><br><br> 03:00 pm.
-								</h4></a>
-
-								<p class="m-b-20" style="line-height: 1.4;">
-									Centenario Himno Nacional Nte. 11A, Visitacion, 54890 Melchor Ocampo, Méx.
-								</p>
-
-								<a href="https://www.google.com/maps/place/Finca+%22Don+Pedro%22/@19.7139006,-99.1430185,17z/data=!3m1!4b1!4m16!1m9!3m8!1s0x85d1f4d49c9b37a1:0x60a31b1ce783208c!2sFinca+%22Don+Pedro%22!8m2!3d19.7138956!4d-99.1404436!9m1!1b1!16s%2Fg%2F11g6rmtk14!3m5!1s0x85d1f4d49c9b37a1:0x60a31b1ce783208c!8m2!3d19.7138956!4d-99.1404436!16s%2Fg%2F11g6rmtk14?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" class="txt4" style="font-size: 16px;" target="_blank">
-									Ver en Google Maps
-									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Contador -->
-	<section class="section-ourmenu bg2-pattern p-t-115 p-b-120">
-		<div class="container">
-			<div class="title-section-ourmenu t-center m-b-22">
-				<span class="tit2 t-center">
-					Faltan:
-				</span>
-
-				<div class="flex-sa-m flex-w w-full m-t-40">
-					<div class="size11 flex-col-c-m">
-						<span class="dis-block t-center txt7 m-b-2 days">68</span>
-
-						<span class="dis-block t-center txt8">
-							Días
-						</span>
-					</div>
-
-					<div class="size11 flex-col-c-m">
-						<span class="dis-block t-center txt7 m-b-2 hours">19</span>
-
-						<span class="dis-block t-center txt8">
-							Horas
-						</span>
-					</div>
-
-					<div class="size11 flex-col-c-m">
-						<span class="dis-block t-center txt7 m-b-2 minutes">2</span>
-
-						<span class="dis-block t-center txt8">
-							Minutos
-						</span>
-					</div>
-
-					<div class="size11 flex-col-c-m">
-						<span class="dis-block t-center txt7 m-b-2 seconds">36</span>
-
-						<span class="dis-block t-center txt8">
-							Segundos
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Itinerario -->
-	<div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url(images/place2.png);">
-		<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
-			Itinerario
-		</h3>
-	</div>
-	<section class="section-mainmenu p-t-110 p-b-70 bg1-pattern">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-lg-6 p-r-35 p-r-15-lg m-l-r-auto">
-					<div class="wrap-item-mainmenu p-b-22">
-						<h3 class="tit-mainmenu tit10 p-b-25">
-							Religioso
-						</h3>
-
-						<!-- Caminata 1 -->
-						<div class="item-mainmenu m-b-36">
-							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
-									Caminata a la iglesia
-								</a>
-
-								<div class="line-item-mainmenu bg3-pattern"></div>
-
-								<div class="price-item-mainmenu txt22">
-									1:50 pm
-								</div>
-							</div>
-
-							<span class="info-item-mainmenu txt23">
-								Saliendo de casa de la novía en Avenida Juarez #22, Visitación. Méx.
-							</span>
-						</div>
-
-						<!-- Misa -->
-						<div class="item-mainmenu m-b-36">
-							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
-									Ceremonia Religiosa
-								</a>
-
-								<div class="line-item-mainmenu bg3-pattern"></div>
-
-								<div class="price-item-mainmenu txt22">
-									2:00 pm
-								</div>
-							</div>
-
-							<span class="info-item-mainmenu txt23">
-								Momneto del si acepto
-							</span>
-						</div>
-
-						<!-- Caminata 2 -->
-						<div class="item-mainmenu m-b-36">
-							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
-									Caminata a Finca
-								</a>
-
-								<div class="line-item-mainmenu bg3-pattern"></div>
-
-								<div class="price-item-mainmenu txt22">
-									2:50 pm
-								</div>
-							</div>
-
-							<span class="info-item-mainmenu txt23">
-								Caminata acompañada de Mariachi
-							</span>
-						</div>
-					</div>
-
-					<div class="wrap-item-mainmenu p-b-22">
-						<h3 class="tit-mainmenu tit10 p-b-25">
-							Celebración
-						</h3>
-
-						<!-- Igreso a Finca -->
-						<div class="item-mainmenu m-b-36">
-							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
-									Ingreso a Finca Don Pedro
-								</a>
-
-								<div class="line-item-mainmenu bg3-pattern"></div>
-
-								<div class="price-item-mainmenu txt22">
-									03:00 pm.
-								</div>
-							</div>
-
-							<span class="info-item-mainmenu txt23">
-								Descripción
-							</span>
-						</div>
-
-						<!-- Fotos -->
-						<div class="item-mainmenu m-b-36">
-							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
-									Bienvenida y fotos
-								</a>
-
-								<div class="line-item-mainmenu bg3-pattern"></div>
-
-								<div class="price-item-mainmenu txt22">
-									03:15 pm
-								</div>
-							</div>
-
-							<span class="info-item-mainmenu txt23">
-								Feugiat maximus neque pharetra
-							</span>
-						</div>
-
-						<!-- Comida -->
-						<div class="item-mainmenu m-b-36">
-							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
-									Comida
-								</a>
-
-								<div class="line-item-mainmenu bg3-pattern"></div>
-
-								<div class="price-item-mainmenu txt22">
-									04:00 pm
-								</div>
-							</div>
-
-							<span class="info-item-mainmenu txt23">
-								Feugiat maximus neque pharetra
-							</span>
-						</div>
-
-						<!-- Primer baile -->
-						<div class="item-mainmenu m-b-36">
-							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
-									Primer baile de esposos
-								</a>
-
-								<div class="line-item-mainmenu bg3-pattern"></div>
-
-								<div class="price-item-mainmenu txt22">
-									06:00 pm
-								</div>
-							</div>
-
-							<span class="info-item-mainmenu txt23">
-								Proin lacinia nisl ut ultricies posuere nulla
-							</span>
-						</div>
-
-						<!-- Vibora -->
-						<div class="item-mainmenu m-b-36">
-							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
-									Víbora de la Mar
-								</a>
-
-								<div class="line-item-mainmenu bg3-pattern"></div>
-
-								<div class="price-item-mainmenu txt22">
-									06:15 pm
-								</div>
-							</div>
-
-							<span class="info-item-mainmenu txt23">
-								Sed fermentum eros vitae eros
-							</span>
-						</div>
-
-						<!-- Pastel -->
-						<div class="item-mainmenu m-b-36">
-							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
-									Partida de pastel
-								</a>
-
-								<div class="line-item-mainmenu bg3-pattern"></div>
-
-								<div class="price-item-mainmenu txt22">
-									06:45 pm
-								</div>
-							</div>
-
-							<span class="info-item-mainmenu txt23">
-								Sed fermentum eros vitae eros
-							</span>
-						</div>
-
-						<!-- Baile -->
-						<div class="item-mainmenu m-b-36">
-							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
-									Baile
-								</a>
-
-								<div class="line-item-mainmenu bg3-pattern"></div>
-
-								<div class="price-item-mainmenu txt22">
-									07:00 pm
-								</div>
-							</div>
-
-							<span class="info-item-mainmenu txt23">
-								Sed fermentum eros vitae eros
-							</span>
-						</div>
-
-						<!-- Fin del evento -->
-						<div class="item-mainmenu m-b-36">
-							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
-									Fin del evento
-								</a>
-
-								<div class="line-item-mainmenu bg3-pattern"></div>
-
-								<div class="price-item-mainmenu txt22">
-									01:00 am
-								</div>
-							</div>
-
-							<span class="info-item-mainmenu txt23">
-								Sed fermentum eros vitae eros
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Vestimenta -->
-	<section class="section-event">
-		<div class="wrap-slick2">
-			<div class="slick2">
-				<div class="item-slick2 item1-slick2" style="background-image: url(images/bg-event-01.jpg);">
-					<div class="wrap-content-slide2 p-t-115 p-b-208">
-						<div class="container">
-							<!-- - -->
-							<div class="title-event t-center m-b-52">
-								<span class="tit2 p-l-15 p-r-15">
-									Código de vestimenta
-								</span>
-
-								<h3 class="tit6 t-center p-l-15 p-r-15 p-t-3">
-									Formal
-								</h3>
-							</div>
-
-							<!-- Block2 -->
-							<div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="zoomIn">
-								<!-- Pic block2 -->
-								<a href="#" class="wrap-pic-blo2 bg1-blo2" style="background-image: url(images/event-02.jpg);">
-									<div class="time-event size10 txt6 effect1">
-										<span class="txt-effect1 flex-c-m t-center">
-											08:00 PM Tuesday - 21 November 2018
-										</span>
-									</div>
-								</a>
-
-								<!-- Text block2 -->
-								<div class="wrap-text-blo2 flex-col-c-m p-l-40 p-r-40 p-t-45 p-b-30">
-									<h4 class="tit7 t-center m-b-10">
-										Wines during specific nights
-									</h4>
-
-									<p class="t-center">
-										Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia
-									</p>
-
-									<a href="#" class="txt4 m-t-40">
-										Ver pinterest
-										<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="item-slick2 item2-slick2" style="background-image: url(images/bg-event-02.jpg);">
-					<div class="wrap-content-slide2 p-t-115 p-b-208">
-						<div class="container">
-							<!-- - -->
-							<div class="title-event t-center m-b-52">
-								<span class="tit2 p-l-15 p-r-15">
-									Upcomming
-								</span>
-
-								<h3 class="tit6 t-center p-l-15 p-r-15 p-t-3">
-									Events
-								</h3>
-							</div>
-
-							<!-- Block2 -->
-							<div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="fadeInDown">
-								<!-- Pic block2 -->
-								<a href="#" class="wrap-pic-blo2 bg2-blo2" style="background-image: url(images/event-06.jpg);">
-									<div class="time-event size10 txt6 effect1">
-										<span class="txt-effect1 flex-c-m">
-											08:00 PM Tuesday - 21 November 2018
-										</span>
-									</div>
-								</a>
-
-								<!-- Text block2 -->
-								<div class="wrap-text-blo2 flex-col-c-m p-l-40 p-r-40 p-t-45 p-b-30">
-									<h4 class="tit7 t-center m-b-10">
-										Wines during specific nights
-									</h4>
-
-									<p class="t-center">
-										Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia
-									</p>
-
-									<div class="flex-sa-m flex-w w-full m-t-40">
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 days">
-												25
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Days
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 hours">
-												12
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Hours
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 minutes">
-												59
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Minutes
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 seconds">
-												56
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Seconds
-											</span>
-										</div>
-									</div>
-
-									<a href="#" class="txt4 m-t-40">
-										View Details
-										<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="item-slick2 item3-slick2" style="background-image: url(images/bg-event-04.jpg);">
-					<div class="wrap-content-slide2 p-t-115 p-b-208">
-						<div class="container">
-							<!-- - -->
-							<div class="title-event t-center m-b-52">
-								<span class="tit2 p-l-15 p-r-15">
-									Upcomming
-								</span>
-
-								<h3 class="tit6 t-center p-l-15 p-r-15 p-t-3">
-									Events
-								</h3>
-							</div>
-
-							<!-- Block2 -->
-							<div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="rotateInUpLeft">
-								<!-- Pic block2 -->
-								<a href="#" class="wrap-pic-blo2 bg3-blo2" style="background-image: url(images/event-01.jpg);">
-									<div class="time-event size10 txt6 effect1">
-										<span class="txt-effect1 flex-c-m">
-											08:00 PM Tuesday - 21 November 2018
-										</span>
-									</div>
-								</a>
-
-								<!-- Text block2 -->
-								<div class="wrap-text-blo2 flex-col-c-m p-l-40 p-r-40 p-t-45 p-b-30">
-									<h4 class="tit7 t-center m-b-10">
-										Wines during specific nights
-									</h4>
-
-									<p class="t-center">
-										Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia
-									</p>
-
-									<div class="flex-sa-m flex-w w-full m-t-40">
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 days">
-												25
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Days
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 hours">
-												12
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Hours
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 minutes">
-												59
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Minutes
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 seconds">
-												56
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Seconds
-											</span>
-										</div>
-									</div>
-
-									<a href="#" class="txt4 m-t-40">
-										View Details
-										<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="wrap-slick2-dots"></div>
-		</div>
-	</section>
-
-	<!-- Our menu -->
-	<section class="section-ourmenu bg2-pattern p-t-115 p-b-120">
-		<div class="container">
-			<div class="title-section-ourmenu t-center m-b-22">
-				<span class="tit2 t-center">
-					Discover
-				</span>
-
-				<h3 class="tit5 t-center m-t-2">
-					Our Menu
-				</h3>
-			</div>
-
-			<div class="row">
-				<div class="col-md-8">
-					<div class="row">
-						<div class="col-sm-6">
-							<!-- Item our menu -->
-							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/our-menu-01.jpg" loading="lazy" alt="IMG-MENU">
-
-								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size4">
-									Lunch
-								</a>
-							</div>
-						</div>
-
-						<div class="col-sm-6">
-							<!-- Item our menu -->
-							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/our-menu-05.jpg" loading="lazy" alt="IMG-MENU">
-
-								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size5">
-									Dinner
-								</a>
-							</div>
-						</div>
-
-						<div class="col-12">
-							<!-- Item our menu -->
-							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/our-menu-13.jpg" loading="lazy" alt="IMG-MENU">
-
-								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size6">
-									Happy Hour
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="row">
-						<div class="col-12">
-							<!-- Item our menu -->
-							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/our-menu-08.jpg" loading="lazy" alt="IMG-MENU">
-
-								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size7">
-									Drink
-								</a>
-							</div>
-						</div>
-
-						<div class="col-12">
-							<!-- Item our menu -->
-							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/our-menu-10.jpg" loading="lazy" alt="IMG-MENU">
-
-								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size8">
-									Starters
-								</a>
-							</div>
-						</div>
-
-						<div class="col-12">
-							<!-- Item our menu -->
-							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/our-menu-16.jpg" loading="lazy" alt="IMG-MENU">
-
-								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size9">
-									Dessert
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</section>
-
-
-	<!-- Event -->
-	<section class="section-event">
-		<div class="wrap-slick2">
-			<div class="slick2">
-				<div class="item-slick2 item1-slick2" style="background-image: url(images/bg-event-01.jpg);">
-					<div class="wrap-content-slide2 p-t-115 p-b-208">
-						<div class="container">
-							<!-- - -->
-							<div class="title-event t-center m-b-52">
-								<span class="tit2 p-l-15 p-r-15">
-									Upcomming
-								</span>
-
-								<h3 class="tit6 t-center p-l-15 p-r-15 p-t-3">
-									Events
-								</h3>
-							</div>
-
-							<!-- Block2 -->
-							<div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="zoomIn">
-								<!-- Pic block2 -->
-								<a href="#" class="wrap-pic-blo2 bg1-blo2" style="background-image: url(images/event-02.jpg);">
-									<div class="time-event size10 txt6 effect1">
-										<span class="txt-effect1 flex-c-m t-center">
-											08:00 PM Tuesday - 21 November 2018
-										</span>
-									</div>
-								</a>
-
-								<!-- Text block2 -->
-								<div class="wrap-text-blo2 flex-col-c-m p-l-40 p-r-40 p-t-45 p-b-30">
-									<h4 class="tit7 t-center m-b-10">
-										Wines during specific nights
-									</h4>
-
-									<p class="t-center">
-										Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia
-									</p>
-
-									<div class="flex-sa-m flex-w w-full m-t-40">
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 days">
-												25
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Days
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 hours">
-												12
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Hours
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 minutes">
-												59
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Minutes
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 seconds">
-												56
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Seconds
-											</span>
-										</div>
-									</div>
-
-									<a href="#" class="txt4 m-t-40">
-										View Details
-										<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="item-slick2 item2-slick2" style="background-image: url(images/bg-event-02.jpg);">
-					<div class="wrap-content-slide2 p-t-115 p-b-208">
-						<div class="container">
-							<!-- - -->
-							<div class="title-event t-center m-b-52">
-								<span class="tit2 p-l-15 p-r-15">
-									Upcomming
-								</span>
-
-								<h3 class="tit6 t-center p-l-15 p-r-15 p-t-3">
-									Events
-								</h3>
-							</div>
-
-							<!-- Block2 -->
-							<div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="fadeInDown">
-								<!-- Pic block2 -->
-								<a href="#" class="wrap-pic-blo2 bg2-blo2" style="background-image: url(images/event-06.jpg);">
-									<div class="time-event size10 txt6 effect1">
-										<span class="txt-effect1 flex-c-m">
-											08:00 PM Tuesday - 21 November 2018
-										</span>
-									</div>
-								</a>
-
-								<!-- Text block2 -->
-								<div class="wrap-text-blo2 flex-col-c-m p-l-40 p-r-40 p-t-45 p-b-30">
-									<h4 class="tit7 t-center m-b-10">
-										Wines during specific nights
-									</h4>
-
-									<p class="t-center">
-										Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia
-									</p>
-
-									<div class="flex-sa-m flex-w w-full m-t-40">
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 days">
-												25
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Days
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 hours">
-												12
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Hours
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 minutes">
-												59
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Minutes
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 seconds">
-												56
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Seconds
-											</span>
-										</div>
-									</div>
-
-									<a href="#" class="txt4 m-t-40">
-										View Details
-										<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="item-slick2 item3-slick2" style="background-image: url(images/bg-event-04.jpg);">
-					<div class="wrap-content-slide2 p-t-115 p-b-208">
-						<div class="container">
-							<!-- - -->
-							<div class="title-event t-center m-b-52">
-								<span class="tit2 p-l-15 p-r-15">
-									Upcomming
-								</span>
-
-								<h3 class="tit6 t-center p-l-15 p-r-15 p-t-3">
-									Events
-								</h3>
-							</div>
-
-							<!-- Block2 -->
-							<div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="rotateInUpLeft">
-								<!-- Pic block2 -->
-								<a href="#" class="wrap-pic-blo2 bg3-blo2" style="background-image: url(images/event-01.jpg);">
-									<div class="time-event size10 txt6 effect1">
-										<span class="txt-effect1 flex-c-m">
-											08:00 PM Tuesday - 21 November 2018
-										</span>
-									</div>
-								</a>
-
-								<!-- Text block2 -->
-								<div class="wrap-text-blo2 flex-col-c-m p-l-40 p-r-40 p-t-45 p-b-30">
-									<h4 class="tit7 t-center m-b-10">
-										Wines during specific nights
-									</h4>
-
-									<p class="t-center">
-										Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia
-									</p>
-
-									<div class="flex-sa-m flex-w w-full m-t-40">
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 days">
-												25
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Days
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 hours">
-												12
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Hours
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 minutes">
-												59
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Minutes
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 seconds">
-												56
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Seconds
-											</span>
-										</div>
-									</div>
-
-									<a href="#" class="txt4 m-t-40">
-										View Details
-										<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="wrap-slick2-dots"></div>
-		</div>
-	</section>
-
-	<!-- Sign up -->
-	<div class="section-signup bg1-pattern p-t-85 p-b-85">
-		<form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
-			<span class="txt5 m-10">
-				Specials Sign up
-			</span>
-
-			<div class="wrap-input-signup size17 bo2 bo-rad-10 bgwhite pos-relative txt10 m-10">
-				<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email-address" placeholder="Email Adrress">
-				<i class="fa fa-envelope ab-r-m m-r-18" aria-hidden="true"></i>
-			</div>
-
-			<!-- Button3 -->
-			<button type="submit" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">
-				Sign-up
-			</button>
-		</form>
-	</div>
-
-	<!-- Back to top -->
-	<div class="btn-back-to-top bg0-hov" id="myBtn">
-		<span class="symbol-btn-back-to-top">
-			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
-		</span>
-	</div>
-
-	<!-- Container Selection1 -->
-	<div id="dropDownSelect1"></div>
-
-	<!-- Modal Video 01-->
-	<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
-
-		<div class="modal-dialog" role="document" data-dismiss="modal">
-			<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
-
-			<div class="wrap-video-mo-01">
-				<div class="w-full wrap-pic-w op-0-0"><img src="images/icons/video-16-9.jpg" loading="lazy" alt="IMG"></div>
-				<div class="video-mo-01">
-					<iframe src="https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
-	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
-	<script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
-	<script type="text/javascript" src="js/slick-custom.js"></script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
-	<script type="text/javascript">
-        $('.parallax100').parallax100();
-	</script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-
+<body>
+    <!-- Navbar -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" class="d-inline-block align-text-top">
+            </a>
+            <!-- Botón para colapsar el menú -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Nuestra boda</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#us">Nuestra historia</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Inicio -->
+    <section id="inicio" class="d-flex justify-content-center align-items-center">
+        <div class="text-center">
+            <img src="images/logo.png" alt="Miriam y Joseph" data-aos="zoom-in-up">
+            <p class="txt" data-aos="fade-up-right">¡nos casamos!</p>
+            <p class="titulo" data-aos="fade-up">15 de Marzo de 2025</p>
+            <audio controls="" loop="" data-aos="fade-up">
+                <source src="music/dragonball.mp3" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+            <div data-aos="fade-up">
+                <a class="btn" href="#us">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Us -->
+    <section id="us" class="d-flex justify-content-center align-items-center">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/our-story.JPG" alt="Nuestra historia">
+                </div>
+                <div class="col-md-6">
+                    <p class="txt">Nuestra historia</p>
+                    <p class="titulo">Primer amor</p>
+                    <p>Nuestra historia comenzó siendo niños, la vida nos llevó por caminos distintos, pero el destino nos reencontró.</p>
+                    <p>Hoy, queremos celebrar con ustedes el inicio de una nueva aventura juntos: nuestro matrimonio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax divider -->
+    <div class="parallax">
+        <p class="titulo">Lugar y hora</p>
+    </div>
+
+    <!-- Lugar y hora -->
+    <section id="time" class="d-flex justify-content-center align-items-center">
+        <div class="container text-center">
+            <p class="txt">La cita es el próximo</p>
+            <p class="titulo">15 de Marzo del 2025</p>
+            <div>
+                <a class="btn" href="">Agregar al calendario</a>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="titulo">Ceremonia religiosa</p>
+                    <p class="titulo">02:00 pm</p>
+                    <img src="images/iglesia.jpg" alt="Iglesia">
+                    <p class="titulo">Parroquia de Santa María de la Visitación</p>
+                    <p>Calle Miguel Hidalgo 1, Visitación, 54890 Melchor Ocampo, Méx.</p>
+                    <div><a href="">Ver en Google Maps</a></div>
+                </div>
+                <div class="col-md-6">
+                    <p class="titulo">Recepción</p>
+                    <p class="titulo">03:00 pm</p>
+                    <img src="images/Finca.jpg" alt="Recepción">
+                    <p class="titulo">Finca "Don Pedro"</p>
+                    <p>Centenario Himno Nacional Nte. 11A, Visitacion, 54890 Melchor Ocampo, Méx.</p>
+                    <div><a href="">Ver en Google Maps</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contador -->
+    <div class="row about-wrap">
+        <div class="col-full">
+            <p class="txt">Faltan</p>
+			<!-- Contenedor para el contador -->
+			<div id="countdown" class="countdown"></div>
+			<!-- end col-full -->
+			<p>para la boda</p>
+        </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+
+    <!-- Parallax divider 2 -->
+    <div id="p2" class="parallax">
+        <p class="titulo">Itinerario</p>
+    </div>
+
+    <!-- Itinerario -->
+    <section id="itinerario" class="d-flex justify-content-center align-items-center">
+        <div class="container text-center">
+            <p class="txt">Itinerario</p>
+        </div>
+    </section>
+
+    <!-- Código de vestimenta -->
+    <section id="codigo" class="d-flex justify-content-center align-items-center">
+        <div class="container text-center">
+            <p class="txt">Código de vestimenta</p>
+        </div>
+    </section>
+
+    <!-- Mesa de regalos -->
+    <section id="mesa" class="d-flex justify-content-center align-items-center">
+        <div class="container text-center">
+            <p class="txt">Mesa de regalos</p>
+        </div>
+    </section>
+
+    <!-- Galeria de fotos -->
+    <section id="galeria" class="d-flex justify-content-center align-items-center">
+        <div class="container text-center">
+            <p class="txt">Galeria de fotos</p>
+        </div>
+    </section>
+
+    <!-- Hashtag -->
+    <div id="hashtag">
+        <p class="titulo">#Hashtag</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><span>¡Invita con un toque de magia!</span> Haz tu evento inolvidable con nuestras invitaciones personalizadas.</p>
+        <p>Copyright © 2025 Todos los derechos reservados | Diseñado por Nube invitaciones <a href="https://www.nubeinvitaciones.com/#services">www.nubeinvitaciones.com</a></p>
+    </footer>
+    
+    <!-- Enlace al JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- JavaScript para manejar la visibilidad del logo -->
+    <script>
+        const navbarLogo = document.querySelector('.navbar-brand img');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                // Mostrar el logo al hacer scroll
+                navbarLogo.classList.add('scrolled');
+            } else {
+                // Ocultar el logo al volver a la parte superior
+                navbarLogo.classList.remove('scrolled');
+            }
+            lastScrollY = window.scrollY;
+        });
+    </script>
+    <!-- Referencia al archivo countdown.js -->
+   <script src="js/countdown.js"></script>
 </body>
 </html>

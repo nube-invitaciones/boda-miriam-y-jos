@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@300;400;700&display=swap');
+
+/* Fuente elegante para títulos */
+.txt {
+    font-family: 'Courgette', cursive;
+    font-size: 2.2rem;
+    color: #DEA1AB; /* Rojo vino elegante */
+}
+
+/* Fuente moderna para texto */
+p, a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+}
+.titulo {
+    font-size: 20px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+/* Botones */
+.btn {
+    background: #111111;
+    color: white;
+    border-radius: 10px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 135px;
+    height: 40px;
+}
+
+/* Imagenes */
+img {
+    width: 100%;
+}
+
+/* Menu fijo */
+.navbar {
+    border-top: 8px solid #DEA1AB;
+    background: transparent!important;
+}
+
+/* Estilo para ocultar el logo inicialmente */
+.navbar-brand img {
+    width: 80px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Mostrar el logo al hacer scroll */
+.navbar-brand img.scrolled {
+    opacity: 1;
+}
+
+/* Altura de secciones*/
+section {
+    height: 100vh; /* La altura es igual al 100% de la altura de la ventana del navegador */
+}
+
+/* Fondo de la sección inicio*/
+#inicio {
+    background-image: url("../images/background-inicio.png"); /* Imagen de fondo */
+    background-repeat: no-repeat; /* Evitar que se repita */
+    background-size: cover; /* Hacer que la imagen cubra todo el fondo */
+    background-position: center; /* Centrar la imagen en el contenedor */
+}
+
+/* Tamaño del logo en inicio */
+#inicio img {
+    width: 30%;
+    margin: 0 0 2% 0;
+}
+
+/* Espacio en control de audio */
+audio {
+    margin: 2% 0;
+}
+
+/* Tamaño imagen US */
+#us img {
+    width: 80%;
+    border-radius: 24px;
+}
+
+/* Divisor parallax */
+.parallax {
+    background-image: url('../images/divider-place.png'); /* Imagen de fondo */
+    background-attachment: fixed; /* Establece el fondo fijo para el efecto parallax */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el área */
+    text-align: center;
+    color: white;
+    padding: 8%;
+}
+#p2 {
+    background-image: url('../images/divider-place2.png'); /* cabiar imagen de fondo */
+}
+/* Fondo código de vestimenta */
+#codigo {
+    background-image: url('../images/divider-place.png'); /* Imagen de fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el área */
+}
+footer {
+    background-color: #222222;
+    color: #999999;
+    text-align: center;
+    padding: 5rem 0;
+}
+footer p, a {
+    font-size: 1.2rem;
+}
+footer span {
+    color: white;
+}
