@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +16,9 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+
     <!-- Navbar -->
     <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container">
@@ -67,10 +70,10 @@
     <section id="us" class="d-flex justify-content-center align-items-center">
         <div class="container text-center">
             <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="images/our-story.JPG" alt="Nuestra historia">
+                <div class="col-md-6 col-sm-12">
+                    <img src="images/our.png" alt="Nuestra historia">
                 </div>
-                <div class="col-md-6">
+                <div id="story" class="col-md-6 col-sm-12">
                     <p class="txt">Nuestra historia</p>
                     <p class="titulo">Primer amor</p>
                     <p>Nuestra historia comenzó siendo niños, la vida nos llevó por caminos distintos, pero el destino nos reencontró.</p>
@@ -82,58 +85,195 @@
 
     <!-- Parallax divider -->
     <div class="parallax">
-        <p class="titulo">Lugar y hora</p>
+        <p class="titulo">Día y hora</p>
     </div>
 
-    <!-- Lugar y hora -->
-    <section id="time" class="d-flex justify-content-center align-items-center">
-        <div class="container text-center">
-            <p class="txt">La cita es el próximo</p>
-            <p class="titulo">15 de Marzo del 2025</p>
-            <div>
-                <a class="btn" href="">Agregar al calendario</a>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="titulo">Ceremonia religiosa</p>
-                    <p class="titulo">02:00 pm</p>
-                    <img src="images/iglesia.jpg" alt="Iglesia">
-                    <p class="titulo">Parroquia de Santa María de la Visitación</p>
-                    <p>Calle Miguel Hidalgo 1, Visitación, 54890 Melchor Ocampo, Méx.</p>
-                    <div><a href="">Ver en Google Maps</a></div>
+    <!-- Día y hora -->
+    <section id="day" class="full-screen">
+        <section class="container full-screen">
+            <div class="w-100">
+                <!-- Texto centrado arriba -->
+                <div class="mb-4 fw-bold">
+                    <p class="titulo">Con la bendición de Dios y nuestros padres:</p>
                 </div>
-                <div class="col-md-6">
-                    <p class="titulo">Recepción</p>
+    
+                <!-- Fila con dos columnas -->
+                <div class="row justify-content-center">
+                    <div class="col-md-5 p-4">
+                        <p>Fernando López Trejo</p>
+                        <p>María Isabel Reyes Navarrete</p>
+                    </div>
+                    <div class="col-md-5 p-4">
+                        <p>Rigoberto Reyes Urbán</p>
+                        <p>Luz María Arroyo Zamora</p>
+                    </div>
+                </div>
+    
+                <!-- Texto centrado abajo -->
+                <div class="mt-4 fw-bold">
+                    <p class="txt" style="margin: 0 0 3rem 0;">Tenemos el honor de invitarles a nuestra boda que se celebrará el día:</p>
+                    <p class="titulo">Sábado 15 de Marzo del 2025</p>
+                    <p class="titulo">a las 02:00pm</p>
+                    <img src="images/line.png" alt="line">
+                    <div style="margin: 3rem 0 0 0;">
+                        <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Boda+Miriam+y+Joseph&amp;dates=20250315T200000Z/20250316T070000Z&amp;details=Te+esperamos&amp;location=Parroquia+de+Santa+María+de+la+Visitación,+Miguel+Hidalgo+1+Visitación+54890,+Melchor+Ocampo,+México" target="_blank">Agregar al calendario</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Parallax divider 2 -->
+    <div id="p2" class="parallax">
+        <p class="titulo">Lugar</p>
+    </div>
+
+    <!-- Lugar -->
+    <section id="place" class="container py-5">
+        <!-- Fila con dos columnas -->
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="p-4 text-center">
+                    <p class="txt">Ceremonia religiosa</p>
+                    <img src="images/iglesia.png" alt="Iglesia" style="width: 68%;">
+                    <p class="titulo">Parroquia<br>Sta. María de la Visitación</p>
+                    <p class="titulo">02:00 pm</p>
+                    <p style="font-size: 1.2rem;">Calle Miguel Hidalgo 1, <br> Visitación, 54890 Melchor Ocampo, Méx.</p>
+                    <div class="btn-top">
+                        <a class="btn-secondary" href="">Ver en Google Maps</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="p-4 text-center">
+                    <p class="txt">Recepción</p>
+                    <img src="images/finca.png" alt="Recepción" style="width: 68%;">
+                    <p class="titulo">Finca<br>"Don Pedro"</p>
                     <p class="titulo">03:00 pm</p>
-                    <img src="images/Finca.jpg" alt="Recepción">
-                    <p class="titulo">Finca "Don Pedro"</p>
-                    <p>Centenario Himno Nacional Nte. 11A, Visitacion, 54890 Melchor Ocampo, Méx.</p>
-                    <div><a href="">Ver en Google Maps</a></div>
+                    <p style="font-size: 1.2rem;">Centenario Himno Nacional Nte. 11A, <br> Visitacion, 54890 Melchor Ocampo, Méx.</p>
+                    <div class="btn-top">
+                        <a class="btn-secondary" href="">Ver en Google Maps</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contador -->
-    <div class="row about-wrap">
-        <div class="col-full">
-            <p class="txt">Faltan</p>
-			<!-- Contenedor para el contador -->
-			<div id="countdown" class="countdown"></div>
-			<!-- end col-full -->
-			<p>para la boda</p>
-        </div> <!-- end col-full  -->
-    </div> <!-- end about-wrap  -->
+    <div class="contador">
+        <p class="txt">Faltan</p>
+        <!-- Contenedor para el contador -->
+		<div id="countdown" class="countdown titulo"></div>
+		<!-- end col-full -->
+		<p class="txt">para la boda</p>
+    </div>
 
-    <!-- Parallax divider 2 -->
-    <div id="p2" class="parallax">
+    <!-- Parallax divider 3 -->
+    <div id="p3" class="parallax">
         <p class="titulo">Itinerario</p>
     </div>
 
     <!-- Itinerario -->
-    <section id="itinerario" class="d-flex justify-content-center align-items-center">
-        <div class="container text-center">
-            <p class="txt">Itinerario</p>
+    <section id="itinerario" class="timeline-section">
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="circle"></div>
+                <div class="content">
+                    <p class="txt">1:45 PM</p>
+                    <p class="titulo">Caminata a la iglesia</p>
+                    <p>¡Acompáñanos con ritmo y emoción hasta el altar!</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="circle"></div>
+                <div class="content">
+                    <p class="txt">2:00 PM</p>
+                    <p class="titulo">Ceremonia religiosa</p>
+                    <p>¡El “Sí, acepto” no tiene marcha atrás!</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="circle"></div>
+                <div class="content">
+                    <p class="txt">2:45 PM</p>
+                    <p class="titulo">Caminata a la finca</p>
+                    <p>¡Porque una sola caminata no es suficiente!</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="circle"></div>
+                <div class="content">
+                    <p class="txt">3:00 PM</p>
+                    <p class="titulo">Recepción en la finca</p>
+                    <p>¡Y que empiece la pachanga!</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="circle"></div>
+                <div class="content">
+                    <p class="txt">3:10 PM</p>
+                    <p class="titulo">Fotos y felicitaciones</p>
+                    <p>El gran debut como esposos</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="circle"></div>
+                <div class="content">
+                    <p class="txt">3:30 PM</p>
+                    <p class="titulo">Comida</p>
+                    <p>Hora de recargar energías.</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="circle"></div>
+                <div class="content">
+                    <p class="txt">5:00 PM</p>
+                    <p class="titulo">Pastel</p>
+                    <p>Dulce momento…</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="circle"></div>
+                <div class="content">
+                    <p class="txt">6:15 PM</p>
+                    <p class="titulo">Primer baile de esposos</p>
+                    <p>El momento romántico…</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="circle"></div>
+                <div class="content">
+                    <p class="txt">6:30 PM</p>
+                    <p class="titulo">Víbora de la mar</p>
+                    <p>¡A correr, esquivar y no caer!</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="circle"></div>
+                <div class="content">
+                    <p class="txt">7:00 PM</p>
+                    <p class="titulo">Baile & fiesta</p>
+                    <p>¡A mover el esqueleto hasta el amanecer!</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="circle"></div>
+                <div class="content">
+                    <p class="txt">1:00 AM</p>
+                    <p class="titulo">Fin del evento</p>
+                    <p>Se acaba la fiesta, pero el amor sigue para siempre.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -165,8 +305,8 @@
 
     <!-- Footer -->
     <footer>
-        <p><span>¡Invita con un toque de magia!</span> Haz tu evento inolvidable con nuestras invitaciones personalizadas.</p>
-        <p>Copyright © 2025 Todos los derechos reservados | Diseñado por Nube invitaciones <a href="https://www.nubeinvitaciones.com/#services">www.nubeinvitaciones.com</a></p>
+        <p><span>¡Invita con un toque de magia!</span><br> Haz tu evento inolvidable con nuestras invitaciones personalizadas.</p>
+        <p style="font-size: .8rem;">Copyright © 2025 | Diseñado por <span>Nube invitaciones <a style="font-size: .8rem; color: #dea1abff;" href="https://www.nubeinvitaciones.com/" target="_blank">www.nubeinvitaciones.com</a></span></p>
     </footer>
     
     <!-- Enlace al JavaScript de Bootstrap -->
@@ -175,26 +315,35 @@
             crossorigin="anonymous"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <!-- JavaScript para manejar la visibilidad del logo -->
-    <script>
-        const navbarLogo = document.querySelector('.navbar-brand img');
-        let lastScrollY = window.scrollY;
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Referencia al archivo logo.js -->
+    <script src="js/logo.js"></script>
+    <!-- Referencia al archivo countdown.js -->
+    <script src="js/countdown.js"></script>
 
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                // Mostrar el logo al hacer scroll
-                navbarLogo.classList.add('scrolled');
-            } else {
-                // Ocultar el logo al volver a la parte superior
-                navbarLogo.classList.remove('scrolled');
-            }
-            lastScrollY = window.scrollY;
+    <script>
+        // Inicializar AOS
+        AOS.init({
+            duration: 1000,
+            offset: 100,
+            once: false
+        });
+    
+        // GSAP - Efecto de iluminación en los círculos
+        gsap.utils.toArray(".timeline-item").forEach((item) => {
+            gsap.to(item.querySelector(".circle"), {
+                scale: 1.3,
+                background: "#DEA1AB",
+                color: "white",
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top 80%",
+                    toggleActions: "play reverse play reverse"
+                }
+            });
         });
     </script>
-    <!-- Referencia al archivo countdown.js -->
-   <script src="js/countdown.js"></script>
 </body>
 </html>
