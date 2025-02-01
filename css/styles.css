@@ -3,21 +3,19 @@
 /* Fuente elegante para títulos */
 .txt {
     font-family: 'Courgette', cursive;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #DEA1AB; /* Rojo vino elegante */
 }
 
 /* Fuente moderna para texto */
 p, a {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 .titulo {
-    font-size: 20px;
     line-height: 1.6;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    font-size: xx-large;
     font-weight: bold;
 }
 
@@ -28,8 +26,30 @@ p, a {
     border-radius: 10px;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    width: 135px;
-    height: 40px;
+    padding: .8rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+.btn:hover {
+    background-color: #DEA1AB;
+}
+.btn-secondary {
+    border: 3px solid black;
+    color: black;
+    border-radius: 10px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: .8rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.btn-secondary:hover {
+    background-color: black;
+    color: white;
+}
+.btn-top {
+    margin-top: 2rem;
 }
 
 /* Imagenes */
@@ -71,12 +91,12 @@ section {
 /* Tamaño del logo en inicio */
 #inicio img {
     width: 30%;
-    margin: 0 0 2% 0;
+    margin: 0 0 2rem 0;
 }
 
 /* Espacio en control de audio */
 audio {
-    margin: 2% 0;
+    margin: 2rem 0;
 }
 
 /* Tamaño imagen US */
@@ -87,7 +107,7 @@ audio {
 
 /* Divisor parallax */
 .parallax {
-    background-image: url('../images/divider-place.png'); /* Imagen de fondo */
+    background-image: url('../images/place.png'); /* Imagen de fondo */
     background-attachment: fixed; /* Establece el fondo fijo para el efecto parallax */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -97,11 +117,43 @@ audio {
     padding: 8%;
 }
 #p2 {
-    background-image: url('../images/divider-place2.png'); /* cabiar imagen de fondo */
+    background-image: url('../images/place2.png'); /* cabiar imagen de fondo */
+}
+#p3 {
+    background-image: url('../images/place3.png'); /* cabiar imagen de fondo */
+}
+/* Sección day centrar a lo alto y ancho */
+.full-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Asegura que el texto dentro esté alineado */
+}
+#day {
+    background-color: #F0EFED;
+}
+#day .row {
+    margin: 3rem 0;
+}
+#day img {
+    width: 36%;
+    margin: -1.5rem 0 0 0;
+}
+.contador {
+    background-color: #F0EFED;
+    padding: 5rem 0rem;
+    text-align: center;
+}
+#countdown {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+#itinerario {
+    height: auto;
 }
 /* Fondo código de vestimenta */
 #codigo {
-    background-image: url('../images/divider-place.png'); /* Imagen de fondo */
+    background-image: url('../images/place.png'); /* Imagen de fondo */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-size: cover; /* Ajusta la imagen para que cubra todo el área */
@@ -110,11 +162,142 @@ footer {
     background-color: #222222;
     color: #999999;
     text-align: center;
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
-footer p, a {
-    font-size: 1.2rem;
+footer p {
+    font-size: 1rem;
 }
 footer span {
     color: white;
+}
+
+@media (max-width: 768px) {
+    /* Cambia tamaño de titulos en mobile */
+    .titulo {
+        font-size: 1.2rem;
+    }
+    /* Cambio de textos generales en mobile */
+    p {
+        font-size: 1.3rem;
+    }
+    /* Tamaño del logo en inicio de mobile */
+    #inicio img {
+    width: 80%;
+    }
+    /* Sección con alto dinamico de mobile */
+    section {
+        height: auto;
+    }
+    /* Conservar sección de inicio con alto de toda la pantalla de mobile */
+    #inicio {
+        height: 100vh;
+        background-image: url("../images/background-mobile.png"); /* Imagen de fondo */
+    }
+    #story {
+        padding: 5rem 2rem;
+    }
+    #day {
+        padding: 5rem 2rem;
+    }
+    #day .row {
+        margin: 2rem 0;
+    }
+    #day img {
+        width: 80%;
+        margin: -1rem 0 0 0;
+    }
+}
+
+/* ------------- Timeline -------------------- */
+.timeline-section {
+    padding: 5rem 1rem;
+    text-align: center;
+    background: #fff;
+}
+
+.timeline-section .titulo {
+    font-size: 1.2rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: #DEA1AB;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+    opacity: 0;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background 0.3s, transform 0.3s ease-in-out;
+}
+
+.timeline-item.active .circle {
+    background: #DEA1AB;
+    color: white;
+    transform: scale(1.3);
+}
+
+.content {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: left;
+}
+
+.content h4 {
+    font-size: 1.2rem;
+    color: #DEA1AB;
+}
+
+/* Estilos Responsive */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .circle {
+        left: 20px;
+        transform: none;
+    }
+    .content {
+        width: 80%;
+        margin-left: 15%;
+    }
 }
