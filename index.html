@@ -15,12 +15,28 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <!-- Hotjar Tracking Code for https://www.andreaygabriel.boda.nubeinvitaciones.com -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:5164248,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 </head>
 
-<body>
-
+<body>  
     <!-- Navbar -->
-    <nav class="navbar bg-body-tertiary fixed-top">
+    <nav class="navbar fixed-top">
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand" href="#">
@@ -33,16 +49,34 @@
             <!-- Menú -->
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Nuestra boda</h5>
+                    <p class="offcanvas-title txt" id="offcanvasNavbarLabel">Nuestra boda</p>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                            <a class="nav-link" href="#inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#us">Nuestra historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#p1">Día y hora</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#p2">Lugar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#p3">Itinerario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#codigo">Código de vestimenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mesa">Mesa de regalos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#p4">Galeria de fotos</a>
                         </li>
                     </ul>
                 </div>
@@ -56,11 +90,11 @@
             <img src="images/logo.png" alt="Miriam y Joseph" data-aos="zoom-in-up">
             <p class="txt" data-aos="fade-up-right">¡nos casamos!</p>
             <p class="titulo" data-aos="fade-up">15 de Marzo de 2025</p>
-            <audio controls="" loop="" data-aos="fade-up">
+            <audio controls autoplay loop>
                 <source src="music/dragonball.mp3" type="audio/mpeg">
                 Tu navegador no soporta la reproducción de audio.
             </audio>
-            <div data-aos="fade-up">
+            <div data-aos="fade-up" class="aos-init aos-animate smoothscroll">
                 <a class="btn" href="#us">Ver más</a>
             </div>
         </div>
@@ -70,10 +104,10 @@
     <section id="us" class="d-flex justify-content-center align-items-center">
         <div class="container text-center">
             <div class="row align-items-center">
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12" data-aos="fade-up-right">
                     <img src="images/our.png" alt="Nuestra historia">
                 </div>
-                <div id="story" class="col-md-6 col-sm-12">
+                <div id="story" class="col-md-6 col-sm-12" data-aos="fade-up-left">
                     <p class="txt">Nuestra historia</p>
                     <p class="titulo">Primer amor</p>
                     <p>Nuestra historia comenzó siendo niños, la vida nos llevó por caminos distintos, pero el destino nos reencontró.</p>
@@ -84,13 +118,13 @@
     </section>
 
     <!-- Parallax divider -->
-    <div class="parallax">
+    <div id="p1" class="parallax">
         <p class="titulo">Día y hora</p>
     </div>
 
     <!-- Día y hora -->
     <section id="day" class="full-screen">
-        <section class="container full-screen">
+        <div class="container full-screen">
             <div class="w-100">
                 <!-- Texto centrado arriba -->
                 <div class="mb-4 fw-bold">
@@ -112,15 +146,15 @@
                 <!-- Texto centrado abajo -->
                 <div class="mt-4 fw-bold">
                     <p class="txt" style="margin: 0 0 3rem 0;">Tenemos el honor de invitarles a nuestra boda que se celebrará el día:</p>
-                    <p class="titulo">Sábado 15 de Marzo del 2025</p>
-                    <p class="titulo">a las 02:00pm</p>
+                    <p class="titulo" data-aos="zoom-in">Sábado 15 de Marzo del 2025</p>
+                    <p class="titulo" data-aos="zoom-in">a las 02:00pm</p>
                     <img src="images/line.png" alt="line">
                     <div style="margin: 3rem 0 0 0;">
-                        <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Boda+Miriam+y+Joseph&amp;dates=20250315T200000Z/20250316T070000Z&amp;details=Te+esperamos&amp;location=Parroquia+de+Santa+María+de+la+Visitación,+Miguel+Hidalgo+1+Visitación+54890,+Melchor+Ocampo,+México" target="_blank">Agregar al calendario</a>
+                        <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Boda+Miriam+y+Joseph&amp;dates=20250315T200000Z/20250316T055900Z&amp;details=Te+esperamos&amp;location=Parroquia+de+Santa+María+de+la+Visitación,+Miguel+Hidalgo+1+Visitación+54890,+Melchor+Ocampo,+México" target="_blank">Agregar al calendario</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </section>
 
     <!-- Parallax divider 2 -->
@@ -140,7 +174,7 @@
                     <p class="titulo">02:00 pm</p>
                     <p style="font-size: 1.2rem;">Calle Miguel Hidalgo 1, <br> Visitación, 54890 Melchor Ocampo, Méx.</p>
                     <div class="btn-top">
-                        <a class="btn-secondary" href="">Ver en Google Maps</a>
+                        <a class="btn-secondary" href="https://www.google.com.mx/maps/place/Parroquia+de+Santa+María+de+la+Visitación+de+Tlapala/@19.7166054,-99.1367191,17z/data=!3m1!4b1!4m6!3m5!1s0x85d18b32ab95d29f:0x3b713e3765103108!8m2!3d19.7166004!4d-99.1341442!16s%2Fg%2F11bbx10hlp?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D" target="_blank">Ver en Google Maps</a>
                     </div>
                 </div>
             </div>
@@ -152,7 +186,7 @@
                     <p class="titulo">03:00 pm</p>
                     <p style="font-size: 1.2rem;">Centenario Himno Nacional Nte. 11A, <br> Visitacion, 54890 Melchor Ocampo, Méx.</p>
                     <div class="btn-top">
-                        <a class="btn-secondary" href="">Ver en Google Maps</a>
+                        <a class="btn-secondary" href="https://www.google.com.mx/maps/place/Finca+%22Don+Pedro%22/@19.7139006,-99.1430185,17z/data=!3m1!4b1!4m6!3m5!1s0x85d1f4d49c9b37a1:0x60a31b1ce783208c!8m2!3d19.7138956!4d-99.1404436!16s%2Fg%2F11g6rmtk14?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D" target="_blank">Ver en Google Maps</a>
                     </div>
                 </div>
             </div>
@@ -179,99 +213,99 @@
             <div class="timeline-item" data-aos="fade-up">
                 <div class="circle"></div>
                 <div class="content">
-                    <p class="txt">1:45 PM</p>
+                    <p class="txt">1:50 pm</p>
                     <p class="titulo">Caminata a la iglesia</p>
-                    <p>¡Acompáñanos con ritmo y emoción hasta el altar!</p>
+                    <p class="itext">¡Acompáñanos con ritmo y emoción hasta el altar!</p>
                 </div>
             </div>
     
             <div class="timeline-item" data-aos="fade-right">
                 <div class="circle"></div>
                 <div class="content">
-                    <p class="txt">2:00 PM</p>
+                    <p class="txt">2:00 pm</p>
                     <p class="titulo">Ceremonia religiosa</p>
-                    <p>¡El “Sí, acepto” no tiene marcha atrás!</p>
+                    <p class="itext">¡El “Sí, acepto” no tiene marcha atrás!</p>
                 </div>
             </div>
     
             <div class="timeline-item" data-aos="fade-left">
                 <div class="circle"></div>
                 <div class="content">
-                    <p class="txt">2:45 PM</p>
+                    <p class="txt">2:50 pm</p>
                     <p class="titulo">Caminata a la finca</p>
-                    <p>¡Porque una sola caminata no es suficiente!</p>
+                    <p class="itext">¡Porque una sola caminata no es suficiente!</p>
                 </div>
             </div>
     
             <div class="timeline-item" data-aos="fade-up">
                 <div class="circle"></div>
                 <div class="content">
-                    <p class="txt">3:00 PM</p>
+                    <p class="txt">3:00 pm</p>
                     <p class="titulo">Recepción en la finca</p>
-                    <p>¡Y que empiece la pachanga!</p>
+                    <p class="itext">¡Y que empiece la pachanga!</p>
                 </div>
             </div>
     
             <div class="timeline-item" data-aos="fade-right">
                 <div class="circle"></div>
                 <div class="content">
-                    <p class="txt">3:10 PM</p>
+                    <p class="txt">3:10 pm</p>
                     <p class="titulo">Fotos y felicitaciones</p>
-                    <p>El gran debut como esposos</p>
+                    <p class="itext">El gran debut como esposos</p>
                 </div>
             </div>
     
             <div class="timeline-item" data-aos="fade-left">
                 <div class="circle"></div>
                 <div class="content">
-                    <p class="txt">3:30 PM</p>
+                    <p class="txt">3:30 pm</p>
                     <p class="titulo">Comida</p>
-                    <p>Hora de recargar energías.</p>
+                    <p class="itext">Hora de recargar energías.</p>
                 </div>
             </div>
     
             <div class="timeline-item" data-aos="fade-up">
                 <div class="circle"></div>
                 <div class="content">
-                    <p class="txt">5:00 PM</p>
+                    <p class="txt">5:00 pm</p>
                     <p class="titulo">Pastel</p>
-                    <p>Dulce momento…</p>
+                    <p class="itext">Dulce momento…</p>
                 </div>
             </div>
     
             <div class="timeline-item" data-aos="fade-right">
                 <div class="circle"></div>
                 <div class="content">
-                    <p class="txt">6:15 PM</p>
+                    <p class="txt">6:00 pm</p>
                     <p class="titulo">Primer baile de esposos</p>
-                    <p>El momento romántico…</p>
+                    <p class="itext">El momento romántico…</p>
                 </div>
             </div>
     
             <div class="timeline-item" data-aos="fade-left">
                 <div class="circle"></div>
                 <div class="content">
-                    <p class="txt">6:30 PM</p>
+                    <p class="txt">6:15 pm</p>
                     <p class="titulo">Víbora de la mar</p>
-                    <p>¡A correr, esquivar y no caer!</p>
+                    <p class="itext">¡A correr, esquivar y no caer!</p>
                 </div>
             </div>
     
             <div class="timeline-item" data-aos="fade-up">
                 <div class="circle"></div>
                 <div class="content">
-                    <p class="txt">7:00 PM</p>
+                    <p class="txt">7:00 pm</p>
                     <p class="titulo">Baile & fiesta</p>
-                    <p>¡A mover el esqueleto hasta el amanecer!</p>
+                    <p class="itext">¡A mover el esqueleto hasta el amanecer!</p>
                 </div>
             </div>
     
             <div class="timeline-item" data-aos="fade-right">
                 <div class="circle"></div>
                 <div class="content">
-                    <p class="txt">1:00 AM</p>
+                    <p class="txt">1:00 am</p>
                     <p class="titulo">Fin del evento</p>
-                    <p>Se acaba la fiesta, pero el amor sigue para siempre.</p>
+                    <p class="itext">Se acaba la fiesta, pero el amor sigue para siempre.</p>
                 </div>
             </div>
         </div>
@@ -279,29 +313,81 @@
 
     <!-- Código de vestimenta -->
     <section id="codigo" class="d-flex justify-content-center align-items-center">
-        <div class="container text-center">
+        <div class="container text-center cwidth">
             <p class="txt">Código de vestimenta</p>
+            <p class="titulo">Formal</p>
+            <p data-aos="fade-up">Recuerda: el blanco es exclusivo para la novia 👰🏻</p>
+            <p data-aos="fade-up">Y el rosa pastel se toma el día libre, agradecemos que elijas otros tonos para lucir espectacular.</p>
+            <p data-aos="fade-up">¡Nos vemos en la pista de baile!</p>
+            <p data-aos="fade-up">💃🕺</p>
+            
         </div>
     </section>
 
     <!-- Mesa de regalos -->
     <section id="mesa" class="d-flex justify-content-center align-items-center">
-        <div class="container text-center">
+        <div class="container text-center cwidth">
             <p class="txt">Mesa de regalos</p>
+            <p>Lo más importante para nosotros es compartir ese día con ustedes, pero si desean darnos un obsequio aquí podrán encontrar nuestras sugerencias.</p>
+            <img src="images/palacio.png" alt="Palacio de Hierro">
+            <p>Número de evento:</p>
+            <p class="titulo">391642</p>
+            <div>
+                <a class="btn" href="https://www.elpalaciodehierro.com/buscar?eventId=391642" target="_blank">Ver mesa de regalos</a>
+            </div>
         </div>
     </section>
 
+    <!-- Parallax divider 4 -->
+    <div id="p4" class="parallax">
+        <p class="titulo">Galeria de fotos</p>
+    </div>
+
     <!-- Galeria de fotos -->
-    <section id="galeria" class="d-flex justify-content-center align-items-center">
-        <div class="container text-center">
-            <p class="txt">Galeria de fotos</p>
+    <section id="wedding-gallery" class="d-flex justify-content-center align-items-center">
+        <div class="container mt-5">
+            <div class="row gallery">
+                <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                    <img src="images/imagen1.png" alt="Boda 1" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                    <img src="images/imagen2.png" alt="Boda 2" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                    <img src="images/imagen3.png" alt="Boda 3" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+                    <img src="images/imagen4.png" alt="Boda 4" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+                    <img src="images/imagen5.png" alt="Boda 5" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
+                    <img src="images/imagen6.png" alt="Boda 6" class="img-fluid">
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Hashtag -->
-    <div id="hashtag">
-        <p class="titulo">#Hashtag</p>
-    </div>
+    <section id="hashtag" class="d-flex justify-content-center align-items-center">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div id="story" class="col-md-6 col-sm-12" data-aos="fade-up-right">
+                    <p class="txt">Nos encantaría ver la celebración<br>a través de sus ojos</p>
+                    <p>Al compartir sus fotos y recuerdos en redes sociales, te invitamos a usar nuestro hashtag:</p>
+                    <p class="titulo">#BodaMiriyJos</p>
+                    <p>También puedes descargar la app Dots en tu celular y subir tus fotos del evento a nuestro álbum.</p>
+                    <div>
+                        <a class="btn" href="https://onelifesocial.page.link/Bamj" target="_blank">Subir fotos</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12" data-aos="fade-up-left">
+                    <img src="images/hashtag.png" alt="Hashtag">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -318,6 +404,7 @@
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <!-- Referencia al archivo logo.js -->
     <script src="js/logo.js"></script>
     <!-- Referencia al archivo countdown.js -->
@@ -344,6 +431,32 @@
                 }
             });
         });
+
+        // Cambiar el fondo de la navbar al hacer scroll
+        window.addEventListener("scroll", function () {
+            let navbar = document.querySelector(".navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+
+        // Cerrar menú al hacer clic en una opción (solo en móviles)
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function () {
+                let navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    new bootstrap.Collapse(navbarCollapse).toggle();
+                }
+            });
+        });
+        
+        // Simula el tiempo de carga y muestra el contenido con animación
+        setTimeout(function() {
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }, 3000); // 3 segundos de carga
     </script>
 </body>
 </html>

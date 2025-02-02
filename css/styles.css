@@ -19,6 +19,19 @@ p, a {
     font-weight: bold;
 }
 
+/* Tailwindcss */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
 /* Botones */
 .btn {
     background: #111111;
@@ -57,10 +70,16 @@ img {
     width: 100%;
 }
 
-/* Menu fijo */
+/* Estilos de la Navbar */
 .navbar {
     border-top: 8px solid #DEA1AB;
-    background: transparent!important;
+    transition: all 0.3s ease-in-out;
+    background: transparent; /* Fondo transparente al inicio */
+}
+
+.navbar.scrolled {
+    background: white !important; /* Fondo blanco al hacer scroll */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 /* Estilo para ocultar el logo inicialmente */
@@ -68,6 +87,12 @@ img {
     width: 80px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+}
+
+/* Resaltar la sección activa */
+.nav-link.active {
+    font-weight: bold;
+    color: #DEA1AB !important;
 }
 
 /* Mostrar el logo al hacer scroll */
@@ -90,7 +115,7 @@ section {
 
 /* Tamaño del logo en inicio */
 #inicio img {
-    width: 30%;
+    width: 60%;
     margin: 0 0 2rem 0;
 }
 
@@ -114,13 +139,16 @@ audio {
     background-size: cover; /* Ajusta la imagen para que cubra todo el área */
     text-align: center;
     color: white;
-    padding: 8%;
+    padding: 10%;
 }
 #p2 {
     background-image: url('../images/place2.png'); /* cabiar imagen de fondo */
 }
 #p3 {
     background-image: url('../images/place3.png'); /* cabiar imagen de fondo */
+}
+#p4 {
+    background-image: url('../images/place4.png'); /* cabiar imagen de fondo */
 }
 /* Sección day centrar a lo alto y ancho */
 .full-screen {
@@ -141,7 +169,7 @@ audio {
 }
 .contador {
     background-color: #F0EFED;
-    padding: 5rem 0rem;
+    padding: 5rem 2rem;
     text-align: center;
 }
 #countdown {
@@ -151,12 +179,42 @@ audio {
 #itinerario {
     height: auto;
 }
+.itext {
+    font-size: 1.3rem;
+}
 /* Fondo código de vestimenta */
 #codigo {
-    background-image: url('../images/place.png'); /* Imagen de fondo */
+    background-image: url('../images/place5.png'); /* Imagen de fondo */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-size: cover; /* Ajusta la imagen para que cubra todo el área */
+    color: white;
+}
+.cwidth {
+    width: 40%;
+}
+/* Mesa de regalos */
+#mesa {
+    background: #F0EFED;
+}
+#mesa img {
+    width: 38%;
+    padding: 3rem 0;
+}
+/* Galeria de fotos */
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+/* Hashtag */
+#hashtag {
+    background-color: #F0EFED;
+    text-align: center;
+    padding: 4rem 0;
 }
 footer {
     background-color: #222222;
@@ -175,6 +233,9 @@ footer span {
     /* Cambia tamaño de titulos en mobile */
     .titulo {
         font-size: 1.2rem;
+    }
+    .txt {
+        font-size: 1.6rem;
     }
     /* Cambio de textos generales en mobile */
     p {
@@ -197,7 +258,7 @@ footer span {
         padding: 5rem 2rem;
     }
     #day {
-        padding: 5rem 2rem;
+        padding: 5rem 0;
     }
     #day .row {
         margin: 2rem 0;
@@ -206,13 +267,32 @@ footer span {
         width: 80%;
         margin: -1rem 0 0 0;
     }
+    #countdown {
+        font-size: 1.4rem;
+    }
+    #codigo {
+        background-position: left;
+    }
+    .cwidth {
+        width: 90%;
+        padding: 5rem 1rem;
+    }
+    #mesa img {
+        width: 62%;
+    }
+    #hashtag img {
+        width: 80%;
+    }
 }
 
 /* ------------- Timeline -------------------- */
+body {
+    overflow-x: hidden; /* Evitar scroll horizontal */
+}
+
 .timeline-section {
     padding: 5rem 1rem;
     text-align: center;
-    background: #fff;
 }
 
 .timeline-section .titulo {
@@ -221,7 +301,7 @@ footer span {
 
 .timeline {
     position: relative;
-    max-width: 100%;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -243,6 +323,7 @@ footer span {
     position: relative;
     margin-bottom: 50px;
     opacity: 0;
+    padding: 0 20px;
 }
 
 .timeline-item:nth-child(odd) {
@@ -285,19 +366,26 @@ footer span {
 
 /* Estilos Responsive */
 @media (max-width: 768px) {
+    .timeline {
+        padding-left: 20px; /* Evita el espacio extra */
+        padding-right: 20px;
+    }
     .timeline::before {
-        left: 20px;
+        left: 20px; /* Asegura que la línea esté alineada */
+        transform: none;
     }
     .timeline-item {
         flex-direction: column;
         align-items: flex-start;
+        padding-left: 0;
+        padding-right: 0;
     }
     .circle {
-        left: 20px;
+        left: 10px;
         transform: none;
     }
     .content {
-        width: 80%;
-        margin-left: 15%;
+        width: 100%;
+        margin-left: 50%;
     }
 }
