@@ -16,16 +16,16 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
-    <link rel="shortcut icon" href="favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-    <!-- Hotjar Tracking Code for https://www.andreaygabriel.boda.nubeinvitaciones.com -->
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="ite.webmanifest" />
+    <!-- Hotjar Tracking Code for Miri y Jos -->
     <script>
         (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:5164248,hjsv:6};
+            h._hjSettings={hjid:5289391,hjsv:6};
             a=o.getElementsByTagName('head')[0];
             r=o.createElement('script');r.async=1;
             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
@@ -36,14 +36,14 @@
 
 <body>  
     <!-- Navbar -->
-    <nav class="navbar fixed-top">
+    <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="Logo" class="d-inline-block align-text-top">
+                <img src="images/logo.png" alt="Logo" class="d-inline-block align-text-top" loading="lazy">
             </a>
             <!-- Botón para colapsar el menú -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Menú -->
@@ -90,7 +90,7 @@
             <img src="images/logo.png" alt="Miriam y Joseph" data-aos="zoom-in-up">
             <p class="txt" data-aos="fade-up-right">¡nos casamos!</p>
             <p class="titulo" data-aos="fade-up">15 de Marzo de 2025</p>
-            <audio controls autoplay loop>
+            <audio controls loop>
                 <source src="music/dragonball.mp3" type="audio/mpeg">
                 Tu navegador no soporta la reproducción de audio.
             </audio>
@@ -373,7 +373,7 @@
     <section id="hashtag" class="d-flex justify-content-center align-items-center">
         <div class="container text-center">
             <div class="row align-items-center">
-                <div id="story" class="col-md-6 col-sm-12" data-aos="fade-up-right">
+                <div id="htext" class="col-md-6 col-sm-12" data-aos="fade-up-right">
                     <p class="txt">Nos encantaría ver la celebración<br>a través de sus ojos</p>
                     <p>Al compartir sus fotos y recuerdos en redes sociales, te invitamos a usar nuestro hashtag:</p>
                     <p class="titulo">#BodaMiriyJos</p>
@@ -441,22 +441,15 @@
                 navbar.classList.remove("scrolled");
             }
         });
-
-        // Cerrar menú al hacer clic en una opción (solo en móviles)
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', function () {
-                let navbarCollapse = document.querySelector('.navbar-collapse');
-                if (navbarCollapse.classList.contains('show')) {
-                    new bootstrap.Collapse(navbarCollapse).toggle();
+                let offcanvasElement = document.querySelector('#offcanvasNavbar');
+                let offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
+                if (offcanvasInstance) {
+                    offcanvasInstance.hide();
                 }
             });
         });
-        
-        // Simula el tiempo de carga y muestra el contenido con animación
-        setTimeout(function() {
-            document.getElementById('loader').style.display = 'none';
-            document.getElementById('content').style.display = 'block';
-        }, 3000); // 3 segundos de carga
     </script>
 </body>
 </html>
