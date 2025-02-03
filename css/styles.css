@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@300;400;700&display=swap');
-
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Evitar scroll horizontal */
+}
 /* Fuente elegante para títulos */
 .txt {
     font-family: 'Courgette', cursive;
@@ -17,19 +20,6 @@ p, a {
     text-transform: uppercase;
     letter-spacing: .3rem;
     font-weight: bold;
-}
-
-/* Tailwindcss */
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-.animate-bounce {
-    animation: bounce 1s infinite;
 }
 
 /* Botones */
@@ -74,7 +64,6 @@ img {
 .navbar {
     border-top: 8px solid #DEA1AB;
     transition: all 0.3s ease-in-out;
-    background: transparent; /* Fondo transparente al inicio */
 }
 
 .navbar.scrolled {
@@ -214,7 +203,7 @@ audio {
 #hashtag {
     background-color: #F0EFED;
     text-align: center;
-    padding: 4rem 0;
+    padding: 4rem 1rem;
 }
 footer {
     background-color: #222222;
@@ -258,7 +247,7 @@ footer span {
         padding: 5rem 2rem;
     }
     #day {
-        padding: 5rem 0;
+        padding: 5rem 1rem;
     }
     #day .row {
         margin: 2rem 0;
@@ -283,15 +272,14 @@ footer span {
     #hashtag img {
         width: 80%;
     }
+    #htext {
+        margin-bottom: 3rem;
+    }
 }
 
 /* ------------- Timeline -------------------- */
-body {
-    overflow-x: hidden; /* Evitar scroll horizontal */
-}
-
 .timeline-section {
-    padding: 5rem 1rem;
+    padding: 5rem 0rem;
     text-align: center;
 }
 
@@ -301,8 +289,8 @@ body {
 
 .timeline {
     position: relative;
-    max-width: 700px;
     margin: 0 auto;
+    width: 50%;
 }
 
 .timeline::before {
@@ -367,11 +355,12 @@ body {
 /* Estilos Responsive */
 @media (max-width: 768px) {
     .timeline {
-        padding-left: 20px; /* Evita el espacio extra */
-        padding-right: 20px;
+        width: 100%;
+        padding-left: 1rem; /* Evita el espacio extra */
+        padding-right: 1rem;
     }
     .timeline::before {
-        left: 20px; /* Asegura que la línea esté alineada */
+        left: 5.5%; /* Asegura que la línea esté alineada */
         transform: none;
     }
     .timeline-item {
@@ -381,11 +370,13 @@ body {
         padding-right: 0;
     }
     .circle {
-        left: 10px;
+        width: 24px;
+        height: 24px;
+        left: 2%;
         transform: none;
     }
     .content {
-        width: 100%;
-        margin-left: 50%;
+        width: 70%;
+        margin-left: 12%;
     }
 }
